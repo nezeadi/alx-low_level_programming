@@ -1,9 +1,15 @@
 #include <stdio.h>
-
-/*entry point - main function*/
+/**
+ * main - Entry point
+ * 
+ * Descripton - a program to print text using puts function
+ *
+ * return: Always 0 (Success)
+ */
 int main(void)
 {
-	/*displaying the text*/
-	puts("\"Programming is like building a multilingual puzzle");
+	/*puts functions displays text*/
+	puts("\'Programming is like building a multilingual puzzle");
+	/*end of program*/
 	return (0);
 }
