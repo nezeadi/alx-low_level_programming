@@ -15,12 +15,16 @@ int main(void)
 		/*second loop to control second digit of combo*/
 		for (j = 0; j < 10; j++)
 		{
-			if ( i < j)
+			/*third loop to print combo as required*/
+			if (i < j)
 			{
 				putchar('0' + i);
 				putchar('0' + j);
-				putchar(',');
-				putchar(' ');
+				if (i < 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
