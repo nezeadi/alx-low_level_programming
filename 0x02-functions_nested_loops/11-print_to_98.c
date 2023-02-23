@@ -12,9 +12,7 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-			_putchar(',');
+			prinf("%d, ", n);
 			n--;
 		}
 	}
@@ -22,21 +20,12 @@ void print_to_98(int n)
 	{
 		while (n <= 98)
 		{
-			if (n < 10)
-			{
-				_putchar(n + '0');
-			}
-			else
-			{
-				_putchar(n / 10 + '0');
-				_putchar(n % 10 + '0');
-				_putchar(',');
-			}
+			printf("%d, ", n);
 			n++;
 		}
 	}
 	else
 	{
-		_putchar(n + '0');
+		printf("%d, ", n);
 	}
 }
