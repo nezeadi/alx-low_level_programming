@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - a number which prints to 98 for any side of it
