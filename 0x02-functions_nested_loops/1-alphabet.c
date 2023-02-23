@@ -5,30 +5,15 @@
  * Return: 0
  */
 
-int main(void)
+void print_alphabet(void);
 {
-	print_alphabet();
-	return (0);
-}#include "main.h"
+	char letter;
 
-/**
- * main - a program to print the alphabet in lower case
- * Return: 0
- */
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		_putchar(letter);
+	}
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}#include "main.h"
-
-/**
- * main - a program to print the alphabet in lower case
- * Return: 0
- */
-
-int main(void)
-{
-	print_alphabet();
+	_putchar('\n');
 	return (0);
 }
