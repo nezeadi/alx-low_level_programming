@@ -8,8 +8,6 @@
 
 int _isupper(int c)
 {
-	char letter = c + '0';
-
 	if (letter >= 'A' && letter <= 'Z')
 	{
 		return (1);
