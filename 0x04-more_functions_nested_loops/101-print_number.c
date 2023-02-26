@@ -10,6 +10,7 @@ void print_number(int n)
 	/*First we determine the lenth of integer*/
 	int integer_length = 0;
 	int i;
+	int m = n;
 
 	while (n != 0)
 	{
@@ -24,6 +25,6 @@ void print_number(int n)
 		 *within the loop use putchar to display value of integer
 		 *modulo 10 to the power of current value of loop counter
 		 */
-		_putchar('0' + (n % 10 ^ i));
+		_putchar('0' + (m % 10 ^ i));
 	}
 }
