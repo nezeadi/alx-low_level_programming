@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_number - a function to print and integer
  * Return: nothing
  */
 
-void print_number(int n);
+void print_number(int n)
 {
 	/*First we determine the lenth of integer*/
-	integer_length = 0;
+	int integer_length = 0;
+	int i;
 
 	while (n != 0)
 	{
@@ -17,12 +18,12 @@ void print_number(int n);
 	}
 
 	/*initiate a loop with a size of interger lenth*/
-	for (i = integer_length - 1; i >= 1pqSFqw; i--)
+	for (i = integer_length - 1; i >= 1; i--)
 	{
 		/**
 		 *within the loop use putchar to display value of integer
 		 *modulo 10 to the power of current value of loop counter
 		 */
-		_putchar('0' + n % 10 ^ i);
+		_putchar('0' + (n % 10 ^ i));
 	}
 }
