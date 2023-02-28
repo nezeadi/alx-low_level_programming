@@ -20,7 +20,7 @@ int main(void)
 		sum = num1 + num2;
 		num1 = num2;
 		num2 = sum;
-		printf("%.0Lf", num2);
+		printf("%.0Lf", num1);
 
 		if (counter != 97)
 		{
