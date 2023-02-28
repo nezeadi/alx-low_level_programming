@@ -5,3 +5,5 @@
 void _putchar(char a);
 
 char *_strcpy(char *dest, char *src);
+
+#endif
