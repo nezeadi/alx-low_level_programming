@@ -9,11 +9,10 @@
 
 int _strlen(char *s)
 {
-	char string_value[] = *s;
-
 	int string_length;
 
-	for (string_length = 0; string_value[string_length] != '\0'; string_length++)
+	for (string_length = 0; s[string_length] != '\0'; string_length++)
 	{
 	}
 	return (string_length);
+}
