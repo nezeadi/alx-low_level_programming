@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int i, num;
-	int sign = 1
+	int sign = 1;
 
 	for (i = 0; i < _strlen(s); i++)
 	{
