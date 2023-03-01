@@ -9,18 +9,13 @@
 void rev_string(char *s)
 {
 	int i;
-	int j = 0;
-	char new_s = " ";
+	char ns;
 
-	for (i = _strlen(s) - 1; i >= 0; i--)
+	for (i = 0; i <= _strlen(s) / 2; i++)
 	{
-		new_s[j] = s[i];
-		j++;
-	}
-
-	for (j = 0; j <= _strlen(new_s); j++)
-	{
-		s[j] = new_s[j];
+		ns = s[i];
+		s[i] = s[_strlen(s) - i - 1];
+		s[_strlen(s) - i - 1] = ns;
 	}
 }
 
