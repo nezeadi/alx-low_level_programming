@@ -9,18 +9,13 @@
 char *string_toupper(char *s)
 {
 	int i;
-	char j;
-
+	
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] > 97 && s[i] < 122)
 		{
-			j = s[i] - 32;
-		}
-		else
-		{
-			j = s[i];
+			s[i] = s[i] - 32;
 		}
 	}
-	return (j);
+	return (s);
 }
