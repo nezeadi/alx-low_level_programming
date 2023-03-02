@@ -9,16 +9,13 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	if (s1 < s2)
+	if (s1 > s2 || s1 == s2)
 	{
-		return (-15);
-	}
-	else if (s1 > s2)
-	{
-		return (15);
+		return (s1 - s2);
 	}
 	else
 	{
-		return (0);
+		return (s2 -s1);
 	}
 }
+
