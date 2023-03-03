@@ -15,7 +15,7 @@ char *leet(char *s)
 	{
 		for (j = 0; arry[j] != '\0'; j++)
 		{
-			if (s[j] == arry[j])
+			if (s[i] == arry[j])
 			{
 				s[i] = arry[j + 1];
 				break;
