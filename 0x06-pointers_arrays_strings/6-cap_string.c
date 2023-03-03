@@ -1,4 +1,4 @@
-@inclue "main.h"
+#include "main.h"
 
 /**
  * *cap_string - a function to capitalize letters
@@ -22,9 +22,9 @@ char *cap_string(char *s)
 				|| (s[i] == '\"') || (s[i] == '(')
 				|| (s[i] == ')') || (s[i] == '{') || (s[i] == '}'))
 		{
-			if (s[i + 1] >= 97 && (s[i + 1] <= 122)
+			if (s[i + 1] >= 97 && s[i + 1] <= 122)
 			{
-				s[i + 1] = = s[i + 1] - 32;
+				s[i + 1] = s[i + 1] - 32;
 			}
 		}
 	}
