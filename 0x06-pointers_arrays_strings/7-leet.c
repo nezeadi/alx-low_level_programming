@@ -8,16 +8,16 @@
 
 char *leet(char *s)
 {
-	char arry[20] = "a4A4e3E3o0O0t7T7l1L1"
+	char arry[20] = "a4A4e3E3o0O0t7T7l1L1";
 	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; arr[j] != 0; j++)
+		for (j = 0; arry[j] != 0; j++)
 		{
-			if (s[j] == arr[j])
+			if (s[j] == arry[j])
 			{
-				s[i] = arr[j + 1];
+				s[i] = arry[j + 1];
 				break;
 			}
 		}
