@@ -9,19 +9,21 @@
 char *rot13(char *s)
 {
 	/*declare variables*/
+	char upper[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char lower[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+	int j = 0;
 	int i;
 
 	/*declare first loop to iterate through string s*/
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		/*statement to apply rot 13*/
-		if (((s[i] >= 65) && (s[i] <= 77)) || ((s[i] >= 97) && (s[i] <= 109)))
+		for (j = 0; upper[j] != 0; j++)
 		{
-			s[i] = s[i] + 13;
-		}
-		else if (((s[i] >= 78) && (s[i] <= 90)) || ((s[i] >= 110) && (s[i] <= 122)))
-		{
-			s[i] = s[i] - 13;
+			if (s[i] == upper[j])
+			{
+				s[i] = lower[j];
+				break;
+			}
 		}
 	}
 	return (s);
