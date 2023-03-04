@@ -10,17 +10,17 @@ int main(void)
 {
 	int counter;
 
-	long double num1 = 1.0;
-	long double num2 = 2.0;
-	long double sum;
+	unsigned long int num1 = 1.0;
+	unsigned long int num2 = 2.0;
+	unsigned long int sum;
 
-	printf("%.0Lf, ", num1);
+	printf("%lu, ", num1);
 	for (counter = 1; counter < 98; counter++)
 	{
 		sum = num1 + num2;
 		num1 = num2;
 		num2 = sum;
-		printf("%.0Lf", num1);
+		printf("%lu", num1);
 
 		if (counter != 97)
 		{
