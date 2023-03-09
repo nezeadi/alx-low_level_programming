@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * factorial - a function to determind factorial of a number
- * @n: number whose factorial is to be calculated
- * Return: int factorial of number
+ * _pow_recursion - a function to calculate x raised to power y
+ * @x: int to be raised
+ * @y: power to be raised to
+ * Return: valueof x to the power y
  */
 
 int _pow_recursion(int x, int y)
@@ -18,6 +19,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		return (x * _pow_recursion(x, y - 1));								
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
