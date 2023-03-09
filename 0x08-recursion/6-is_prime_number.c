@@ -11,13 +11,10 @@ int IsPrime(int index, int n)
 	if ((n % index) == 0)
 	{
 		return (0);
-	} else if (index <= (n / 2))
-	{
-		return (IsPrime((index + 1), n));
-	} else
-	{
-		return (1);
 	}
+	if (index <= (n / 2))
+		return (IsPrime((index + 1), n));
+	return (1);
 }
 
 /**
@@ -31,11 +28,8 @@ int is_prime_number(int n)
 	if (n <= 1)
 	{
 		return (0);
-	} else if (n == 2 || n == 3)
-	{
-		return (1);
-	} else
-	{
-		return (IsPrime(2, n));
 	}
+	if (n == 2 || n == 3)
+		return (1);
+	return (IsPrime(2, n));
 }
