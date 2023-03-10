@@ -9,23 +9,14 @@
  */
 int squareroot(int start, int end)
 {
-	int mid = (start + end) / 2;
 
-	if ((mid * mid) == end)
+	if ((start * start) == end)
 	{
-		return (mid);
+		return (start);
 	}
-	else if ((mid * mid) < end)
-	{
-		return (squareroot((mid + 1), end));
-	}
-	else if ((mid * mid) > end)
-	{
-		return (squareroot((mid - 1), end));
-	} else
-	{
-		return (-1);
-	}
+	else if ((start * start) != end && ((start * start) < end))
+		return (squareroot((start + 1), end));
+	return (-1);
 }
 
 /**
@@ -40,10 +31,6 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	} else if (n == 1)
-	{
 		return (1);
-	} else
-	{
-		return (squareroot(1, n));
-	}		
+	return (squareroot(1, n));
 }
