@@ -33,7 +33,7 @@ int palindromeCheck(char *str, int left, int right)
 
 int is_palindrome(char *s)
 {
-	if (palindromeCheck(s, 0, (_strlen_recursion(s)-1)))
+	if (palindromeCheck(s, 0, (_strlen_recursion(s)- 1)))
 		return (1);
 	return (0);
 }
