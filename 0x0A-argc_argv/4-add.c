@@ -6,7 +6,7 @@
 
 /**
  * digitCheck - function to check if char is a digit
- * entry: pointer to string to be checked
+ * @entry: pointer to string to be checked
  * Return: 1 if true 0 if false
  */
 int digitCheck(char *entry)
