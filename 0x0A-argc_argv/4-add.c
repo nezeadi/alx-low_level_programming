@@ -11,14 +11,15 @@
  */
 int digitCheck(char *entry)
 {
-	int j; /*initialize counter*/
+	unsigned int j; /*initialize counter*/
 
-	for (j = 0; entry[j] != '\0'; j++)
+	while (j < strlen(entry))
 	{
-		if (isdigit(entry[j]))
-			return (1);
+		if (!isdigit(entry[j]))
+			return (0);
+		j++;
 	}
-	return (0);
+	return (1);
 }
 
 /**
@@ -30,28 +31,23 @@ int digitCheck(char *entry)
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, conv_num, sum = 0;
 
-	if (argc > 1)
+	i = 1;
+	while (i < argc)
 	{
-		for (i = 1; i < argc; i++)
+		if (digitCheck(argv[i]))
 		{
-			if (digitCheck(argv[i]))
-			{
-				sum += atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			conv_num = atoi(argv[i]);
+			sum += conv_num;
 		}
-		printf("%d\n", sum);
-		return (0);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
 	}
-	else
-	{
-		printf("%d\n", 0);
-		return (0);
-	}
+	printf("%d\n", sum);
+	return (0);
 }
