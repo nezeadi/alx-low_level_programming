@@ -18,6 +18,10 @@ typedef struct dog
 
 /**
  * struct dog_t - a new type of dog
+ *
+ * @name: the dog's name
+ * @age: the dog's age
+ * @owner: the dog's owner
  */
 
 typedef struct dog_t
@@ -25,7 +29,7 @@ typedef struct dog_t
 	char *name;
 	float age;
 	char *owner;
-}dog_t;
+} dog_t;
 
 int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
