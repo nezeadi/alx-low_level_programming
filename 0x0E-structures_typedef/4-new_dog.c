@@ -48,9 +48,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		aja->name[length] = *name;
 	aja->name[length] = 0;
 
-	for (length = 0; *owner != 0; length++, owner++)
-		aja->name[length] = *name;
-	aja->name[length] = 0;
+	for (length = 0; *owner != 0; length++)
+		aja->owner[length] = *owner++;
+	aja->owner[length] = 0;
 	aja->age = age;
 
 	return (aja);
