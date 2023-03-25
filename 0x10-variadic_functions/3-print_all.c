@@ -44,7 +44,14 @@ void prints_float(va_list list)
  */
 void prints_string(va_list list)
 {
-	printf("%s", va_arg(list, char *));
+	char *string = va_arg(list, char*);
+
+	while (string != NULL)
+	{
+		printf("%s", string);
+		return;
+	}
+	printf("(nil)");
 }
 
 
@@ -71,7 +78,7 @@ void print_all(const char * const format, ...)
 	{
 		if (types[i].d_type == *pointer)
 		{
-			if(nf)
+			if (nf)
 				printf(", ");
 			nf = 1;
 			types[i].f(list);
