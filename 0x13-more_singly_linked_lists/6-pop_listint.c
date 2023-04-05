@@ -9,10 +9,10 @@ int pop_listint(listint_t **head)
 	/*initialize place holder note for head and for integer in n*/
 	listint_t *temp_node;
 	int n_holder;
-        
+
 	/*Assign value of head to place holder*/
 	temp_node = *head;
-	
+
 	/*check if list is empty and return 0*/
 	if (*head == NULL)
 		return (0);
