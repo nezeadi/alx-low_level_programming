@@ -16,12 +16,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (i > 0 && separator != NULL)
 			printf("%s", separator);
-		
+
 		str = va_arg(args, char*);
 		if (str == NULL)
 		{
 			printf("(nil)");
-			exit(98);
 		}
 		printf("%s", str);
 	}
