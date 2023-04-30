@@ -6,4 +6,6 @@
 
 ##Task 2 - a function to insert an element at the begining of a linked list.
 
-##Task 3 - a function to insert an element at the end of a linked list.
+##Task 3 - a function to insert an element at the end of a linked list
+
+##Task 4 - a function to free a linked list.
