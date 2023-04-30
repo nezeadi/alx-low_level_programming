@@ -5,3 +5,5 @@
 ##Task 1 - a function which returns the number of elements in a linked list
 
 ##Task 2 - a function to insert an element at the begining of a linked list.
+
+##Task 3 - a function to insert an element at the end of a linked list.
