@@ -9,3 +9,5 @@
 ##Task 3 - a function to insert an element at the end of a linked list
 
 ##Task 4 - a function to free a linked list.
+
+##Task 100 - a function that executes before the main function
