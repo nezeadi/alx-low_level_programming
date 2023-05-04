@@ -14,7 +14,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	nth_node = head;
 	counter = 0;
-	
+
 	/*traverse linked list and assign nth node to variable nth_node*/
 	while (nth_node != NULL && counter != index)
 	{
