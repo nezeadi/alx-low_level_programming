@@ -5,6 +5,7 @@
  * @head: head node of linked list
  * @idx: index of the list where node should be added
  * @n: data to be inserted in the node
+ * Return: newly inserted node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -19,14 +20,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new_node->n = n;
 	prev_node = next_node = *head;
 	counter = counter2 = 0;
-	
 	/*traverse list to retrieve previous and next nodes*/
 	while (prev_node != NULL && counter != (idx - 1))
 	{
 		prev_node = prev_node->next;
 		counter++;
 	}
-	
+
 	while (next_node != NULL && counter2 != idx)
 	{
 		next_node = next_node->next;
@@ -39,7 +39,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	/*if idx is greater than list return NULL*/
 	if (idx > counter2)
-		return (NULL);	
+		return (NULL);
 	/*return new node*/
 	return (new_node);
 }
