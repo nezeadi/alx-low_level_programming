@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int index = 1;
+	unsigned long int index = 1;
 
 	index = index << ((sizeof(index) * 8) - 1);
 
@@ -42,4 +42,3 @@ void print_binary(unsigned long int n)
 		index = index >> 1;
 	}
 }
-
